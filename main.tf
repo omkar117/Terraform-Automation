@@ -52,6 +52,10 @@ resource "aws_instance" "myFirstInstance" {
   }
 }
 
+resource "aws_iam_user" "demouser" {
+    name = "tuckerdemo"
+}
+
 # Create Elastic IP address
 resource "aws_eip" "myFirstInstance" {
   vpc      = true
